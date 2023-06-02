@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Exercise</title>
+</head>
+</html>
+</head>
+<body style="font-family: sans-serif;" >
+
+ 
+
+  <!-- Dropdown Menü mit der jeweiligen Anrede (Mr./Mrs.) und das Feld (Label) mit der Bezeichnung Form of Address -->
+
+  <form>
+    <label for="formOfAddress"
+    >Form of Address:</label>
+    <select id="formOfAddress">
+      <option>Mr.</option>
+      <option>Mrs.</option>
+    </select>
+
+       <!--  Eingabefelder zu Vorname, Nachname und der Send button mit Pfad zur Funktion in JS            -->
+  
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" maxlength="30">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" maxlength="30">
+
+    <button type="button" onclick="Task2()">Send</button>
+    <script src="script.js"></script>
+  </form>
+
+  <hr>
+
+  <!-- Ausgabe des Ergebnisses ("Dear Mr./Mrs (...)") -->
+
+  <div id="greeting-section">
+    <p id="greeting"></p>
+  </div>
+</body>
+</html>
+
+
